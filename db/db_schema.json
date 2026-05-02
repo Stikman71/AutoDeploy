@@ -1,0 +1,20 @@
+{
+  "tables": {
+    "receipts": {
+      "columns": {
+        "id": "SERIAL PRIMARY KEY",
+        "doc_id": "VARCHAR(32)",
+        "shop_num": "INTEGER",
+        "cash_num": "INTEGER",
+        "item": "TEXT",
+        "category": "TEXT",
+        "amount": "INTEGER",
+        "price": "NUMERIC",
+        "discount": "NUMERIC"
+      },
+      "constraints": [
+        "UNIQUE (doc_id, item, shop_num, cash_num)"
+      ]
+    }
+  }
+}
